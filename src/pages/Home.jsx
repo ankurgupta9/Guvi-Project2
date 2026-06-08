@@ -55,7 +55,7 @@ function Home({
 
   return (
 
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6 min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100">
 
       <NoteForm addNote={addNote} />
 
@@ -76,7 +76,7 @@ function Home({
             📌 Pinned Notes
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {pinnedNotes.map(note => (
 
